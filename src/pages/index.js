@@ -6,7 +6,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 
 // Home sections
-import TeaserSection from "../components/Teaser"
+import TeaserSection from "../components/teaser"
 import FocusAreasSection from "../components/focus-area"
 import ContactSection from "../components/contact"
 import DoctorsSection from "../components/doctors"
