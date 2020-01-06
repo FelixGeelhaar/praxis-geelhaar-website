@@ -31,9 +31,9 @@ function Contact() {
           }
         `}
       >
-        {data.content.map(content => (
+        {data.content.map(({ id, image, headline, content }) => (
           <div
-            key={content.id}
+            key={id}
             css={css`
               @media (min-width: 1000px) {
                 margin: 0 1rem;
@@ -42,15 +42,15 @@ function Contact() {
               }
             `}
           >
-            <Image fluid={content.image} alt={content.headline} />
+            <Image fluid={image} alt={headline} />
             <h2
               css={css`
                 margin: 1rem 0;
               `}
             >
-              {content.headline}
+              {headline}
             </h2>
-            <p dangerouslySetInnerHTML={{ __html: content.content }} />
+            <p dangerouslySetInnerHTML={{ __html: content }} />
           </div>
         ))}
         <Container
