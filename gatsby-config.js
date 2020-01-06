@@ -41,8 +41,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `praxis-geelhaar-website`,
+        short_name: `praxis-geelhaar`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -53,7 +53,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/impressum`],
+        // precachePages: [`/`, `/impressum`],
       },
     },
     `gatsby-plugin-emotion`,
