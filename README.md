@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/178f5742-79ac-4509-913b-03ba588fb288/deploy-status)](https://app.netlify.com/sites/mystifying-archimedes-a5b662/deploys)
+
 # Praxis Geelhaar
 
 This is the repository of the website (frontend code) written with Gatsby (actually our first page with Gatsby).
