@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,600&display=swap");
+
+:root {
+  --primary: #ee7810;
+  --secondary: #626262;
+  --background-color: #fcfcfc;
+  --light-background-color: #fcecde;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color: var(--secondary);
+  background-color: var(--background-color);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* to enable full width on short pages */
+body > div,
+body > div > div {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+a,
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
