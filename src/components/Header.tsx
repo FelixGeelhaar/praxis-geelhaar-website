@@ -1,13 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import Image from "gatsby-image"
+import Logo from "./Logo"
 import { css } from "@emotion/core"
 
-import useLogo from "../hooks/use-logo"
-
 const Header = ({ siteTitle }) => {
-  const image = useLogo()
   return (
     <header>
       <div
@@ -82,21 +78,8 @@ const Header = ({ siteTitle }) => {
           </a>
         </span>
       </div>
-      <div
-        id="header-logo"
-        css={css`
-          padding: 0.5rem;
-          margin: 1.5rem 0;
-          max-width: 350px;
-        `}
-      >
-        <Link to="/">
-          <Image
-            fluid={image}
-            alt="Praxis Logo"
-            style={{ minWidth: "100px" }}
-          />
-        </Link>
+      <div id="header-logo">
+        <Logo />
       </div>
     </header>
   )

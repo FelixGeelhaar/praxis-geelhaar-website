@@ -2,10 +2,9 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { css } from "@emotion/core"
 
-import SEO from "../components/seo"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import Container from "../components/container"
+import SEO from "../components/SEO"
+import Header from "../components/Header"
+import Container from "../components/Container"
 
 function Impressum({ data }) {
   return data.allDirectusContent.edges.map(({ node }) => (
@@ -38,7 +37,6 @@ function Impressum({ data }) {
         <h1>{node.headline}</h1>
         <div dangerouslySetInnerHTML={{ __html: node.content }} />
       </Container>
-      <Footer />
     </section>
   ))
 }
